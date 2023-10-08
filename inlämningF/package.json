@@ -1,0 +1,18 @@
+{
+  "name": "inlämningF",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --dist-dir docs --public-url ./",
+    "clean": "del-cli ./.parcel-cache ./docs ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "del-cli": "^5.1.0",
+    "parcel": "^2.9.3",
+    "underscore": "^1.13.6"
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" type="module" defer></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Rock Paper Scissors</h1>
+    </header>
+
+    <main>
+        <section id="player-info">
+            <form id="form">
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <button type="submit" id="submit-button">Add Name</button>
+            </form>
+            <div id="player-name"></div>
+        </section>
+
+        <section id="game-section">
+            <div id="game">
+                <div id="game-info">
+                    <p id="score">Score: 0</p>
+                    <div id="display-choices">
+                        <div id="computer-choice"></div>
+                        <div id="player-choice"></div>
+                    </div>
+                    <div id="result">
+                        <p>RESULT</p>
+                    </div>
+                </div>
+                <div id="game-controls">
+                    <button class="hand-button" id="rock">Rock</button>
+                    <button class="hand-button" id="paper">Paper</button>
+                    <button class="hand-button" id="scissors">Scissors</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="high-scores-section">
+            <div class="high-scores">
+                <h2>High Scores</h2>
+                <ul id="high-scores">
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
